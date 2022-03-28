@@ -1,0 +1,11 @@
+SELECT fullname ,
+		 sum(case yearof
+	WHEN 2019 THEN
+	summa
+	ELSE cast(0 AS money) end) AS "2019" , sum(case yearof
+	WHEN 2020 THEN
+	summa
+	ELSE cast(0 AS money) end) AS "2020"
+FROM publisher
+GROUP BY  fullname
+ORDER BY  fullname
