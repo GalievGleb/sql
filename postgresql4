@@ -1,0 +1,6 @@
+SELECT DISTINCT fullname,
+		 "Birthdate",
+		 "Phone",
+		 min ("CreationDate")
+FROM medcards
+GROUP BY  fullname, "Birthdate", "Phone" ;
