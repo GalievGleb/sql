@@ -1,0 +1,8 @@
+WITH demo(srcText, pattern) as  
+(  
+ values(  
+ '5abcd472r78!',  
+ '\d+[^a-zA-Z0-9$]')  
+)  
+select substring(srcText from pattern)  
+from demo
