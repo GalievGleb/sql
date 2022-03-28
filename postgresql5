@@ -1,0 +1,7 @@
+UPDATE services s SET basecost = 
+	(SELECT t.basecost
+	FROM TempTable t
+	WHERE t.code = s.code), "purchasePrice" = 
+	(SELECT t.purchasePrice
+	FROM TempTable t
+	WHERE t.code = s.code)
