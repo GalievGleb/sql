@@ -1,0 +1,10 @@
+WITH active AS (
+SELECT max(date_quit) as lastdate, mcid
+FROM 
+   polises
+GROUP BY mcid)
+select number, seria, date_quit, date_ext, f_name
+from polises 
+join active on polises.mcid=active.mcid
+and polises.date_quit=active.lastdate
+join medcards on polises.mcid=medcards.mcid
