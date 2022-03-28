@@ -1,0 +1,18 @@
+with tmp as 
+( 
+ select a."account", m."f_name", s."name" 
+  from "Accounts" as a 
+   inner join "medcards" as m 
+    on a."mcid" = m."mcid" 
+   inner join "Account_contents" as c 
+    on a."account" = c."account" 
+   inner join "Services" as s 
+    on s."service" = c."service" 
+ where 
+  "account_date" = (select max(account_date) from "Accounts") 
+) 
+select 
+ tmp.account, tmp.f_name, 
+ string_agg(DISTINCT tmp.name, ', ') as serv 
+from tmp 
+GROUP BY tmp.account, tmp.f_name;
