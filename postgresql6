@@ -1,0 +1,2 @@
+Select "SaleDate", sum("SaleSum") over(ORDER BY "SaleDate")
+as total_sale from "Sales";
