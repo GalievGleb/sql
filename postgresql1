@@ -1,4 +1,4 @@
-with tmp as 
+with tmp as
 ( 
  select a."account", m."f_name", s."name" 
   from "Accounts" as a 
