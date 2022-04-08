@@ -1,4 +1,4 @@
-SELECT fullname ,
+SELECT fullname,
 		 sum(case yearof
 	WHEN 2019 THEN
 	summa
