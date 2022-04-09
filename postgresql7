@@ -1,4 +1,4 @@
-WITH active AS (
+WITH active AS(
 SELECT max(date_quit) as lastdate, mcid
 FROM 
    polises
