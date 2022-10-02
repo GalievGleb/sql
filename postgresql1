@@ -15,4 +15,4 @@ select
  tmp.account, tmp.f_name, 
  string_agg(DISTINCT tmp.name, ', ') as serv 
 from tmp 
-GROUP BY tmp.account, tmp.f_name;
+GROUP BY tmp.account, tmp.f_name; 
