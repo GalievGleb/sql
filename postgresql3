@@ -1,5 +1,5 @@
 SELECT *
 FROM medcards
-WHERE LENGTH (first_name) = 
+WHERE LENGTH (first_name) =  
 	(SELECT MAX (LENGTH (first_name))
 	FROM medcards);
