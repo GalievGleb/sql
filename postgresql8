@@ -1,7 +1,7 @@
 SELECT fullname,
 		 sum(case yearof
 	WHEN 2019 THEN
-	summa
+	summa 
 	ELSE cast(0 AS money) end) AS "2019" , sum(case yearof
 	WHEN 2020 THEN
 	summa
