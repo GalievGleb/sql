@@ -1,2 +1,2 @@
 # SQL
-Hey! This repоsitory contains test tasks in the sql language. You can see how I solve them. The tasks are not arranged according to the level of difficulty, but the most interesting for me was the first one!
+Привет! В этом репозитории находятся тестовые задания на языке sql. Вы видите, как я их решаю. Задания не расставлены по уровню сложности, но самым интересным для меня было первое!
