@@ -2,10 +2,14 @@
 Привет! В этом репозитории находятся тестовые задания на языке sql. Для создания БД использовал pgadmin4.
 # SQL
 ## Homework-1
-Протестировать программу "ListBoxer": составить чек-лист; оформить баг-репорты.\
+Даны таблицы: 
+1.	Medcards. В ней храниться информация по пациентам.
+2.	Accounts (внешний ключ из табл. medcards - mcid) используется для хранения счетов пациентов. 
+3.	Services. Используется для хранения услуг.
+4.	Accounts_contents (внешний ключ из табл. Accounts – account; внешний ключ из табл. Services - service)
+Необходимо написать запрос, который выведет последний номер счета, по которые были начисления услуг, ФИО пациента, которому принадлежит счет, также все услуги через запятую которые были ему начислены.\
 <b>Результат выполнения задания:</b>\
-[Homework-1](https://github.com/JosieVi/Checklists/blob/main/Homework-1.pdf)
-или [Google Диск](https://docs.google.com/spreadsheets/d/1-bhjlo1zv7hOhCTfojRU2rXvUY7tOQB-sksoBWhG7os/edit?usp=sharing)
+[sql_task_1]([https://github.com/GalievGleb/SQL/blob/main/sql_task_1])
 
 ## Homework-2
 Протестировать Android приложение "TO-DO-MVP": составить чек-лист; оформить баг-репорты.\
