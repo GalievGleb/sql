@@ -9,7 +9,7 @@
 4.	Accounts_contents (внешний ключ из табл. Accounts – account; внешний ключ из табл. Services - service)
 Необходимо написать запрос, который выведет последний номер счета, по которые были начисления услуг, ФИО пациента, которому принадлежит счет, также все услуги через запятую которые были ему начислены.\
 <b>Результат выполнения задания:</b>\
-[sql_task_1]([https://github.com/GalievGleb/SQL/blob/main/sql_task_1])
+[sql_task_1](https://github.com/GalievGleb/SQL/blob/main/sql_task_1)
 
 ## Homework-2
 Протестировать Android приложение "TO-DO-MVP": составить чек-лист; оформить баг-репорты.\
